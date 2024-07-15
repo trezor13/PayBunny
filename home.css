@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Manrope-VariableFont_wght.ttf') format('truetype'),
+         url('./Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Manrope;
+}
+
+.Main {
+    width: 95%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.HeroDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.HeroDivLeft {
+    width: 50%;
+    margin-top: 130px;
+}
+
+.HeroDivLeft h1 {
+    font-size: 48px;
+}
+
+.HeroDivRight {
+    width: 50%;
+}
+
+.HeroDivRight img {
+    width: 670px;
+    height: 680px;
+}
+
+button {
+    width: 170px;
+    height: 50px;
+    background-color: #4263EB;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    font-size: 16px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card1, .card2, .card3 {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.waitlist {  
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    justify-content: space-around;
+    background-color: #E2E7FF;
+    border-radius: 30px; 
+    width: 94%;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+
+.waitlist img {
+    margin-top: 60px;
+    width: auto;
+    height: 340px;
+}
+
+.waitlistLeft h1 {
+    font-size: 48px;
+}
+
+.waitlistLeft p {
+    font-size: 16px;
+}
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 400px;
+    justify-content: space-between;
+    background-color: #15141F;
+    border-radius: 30px; 
+    width: 94%;
+    margin-left: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.frame1 img, .frame2 img {
+    width: 320px;
+    height: 360px;
+}
+
+.middleFrame img {
+    height: 50px;
+    width: 150px;
+}
+
+.middleFrame {
+    font-size: 12px;
+}
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animate.scrolled {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    .HeroDivLeft, .HeroDivRight {
+        width: 100%;
+        text-align: center;
+
+    }
+    .header{
+        font-size: 10px;
+    }
+    .HeroDivLeft {
+        margin-top: 20px;
+    
+    }
+    .HeroDivLeft h1 {
+        font-size: 32px;
+    }
+    .HeroDivRight img {
+        width: 100%;
+        height: auto;
+    }
+    .waitlist, .footer {
+        width: 90%;
+        margin-left: 0;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .waitlist img{
+       display: none;
+
+    }
+    .frame1 img, .frame2 img{
+        display:  none;
+    }
+    .waitlistLeft h1 {
+        font-size: 32px;
+    }
+    button {
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card1, .card2, .card3 {
+        width: 90%;
+    }
+    .scroll-animate {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .scroll-animate.scrolled {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
