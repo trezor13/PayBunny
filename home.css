@@ -11,10 +11,9 @@ body {
 }
 
 .Main {
-    width: 95%;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    max-width: 1350px;
+    margin: 0 auto;
 }
 
 .HeroDiv {
