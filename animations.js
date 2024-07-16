@@ -1,21 +1,34 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('.scroll-animate');
-    const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1
+document.addEventListener("DOMContentLoaded", () => {
+    // Scroll animation
+    const scrollElements = document.querySelectorAll(".scroll-animate");
+
+    const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+            elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+        );
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('scrolled');
-                observer.unobserve(entry.target);
+    const displayScrollElement = (element) => {
+        element.classList.add("scrolled");
+    };
+
+    const hideScrollElement = (element) => {
+        element.classList.remove("scrolled");
+    };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 1.25)) {
+                displayScrollElement(el);
+            } else {
+                hideScrollElement(el);
             }
         });
-    }, options);
+    };
 
-    elements.forEach(element => {
-        observer.observe(element);
+    window.addEventListener("scroll", () => {
+        handleScrollAnimation();
     });
 });
