@@ -207,8 +207,15 @@ button {
     }
 
     .card1, .card2, .card3 {
-        width: 90%;
-        margin-left: 20px;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;  /* Maintain the vertical spacing */
+    }
+
+    .card1 img, .card2 img, .card3 img {
+        width: 98%;  /* Adjust width for better fit */
+        margin: 0 auto;  /* Center align the images */
+        display: block;  /* Ensure the images are displayed as block elements */
     }
 
     .scroll-animate {
