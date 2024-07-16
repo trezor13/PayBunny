@@ -11,7 +11,6 @@ body {
 }
 
 .Main {
-    width: auto;
     max-width: 1350px;
     margin: 0 auto;
 }
@@ -49,7 +48,7 @@ button {
     background-color: #4263EB;
     color: white;
     font-size: 14px;
-    border-radius: 6px;
+    border-radius: 16px;
     border: none;
     cursor: pointer;
     font-weight: 700;
@@ -220,6 +219,13 @@ button {
         height: auto;
         padding: 20px;
         text-align: center;
+    }
+    .waitlist button{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    .waitlist p{
+        font-size: 14px;
     }
 
     .waitlist img {
