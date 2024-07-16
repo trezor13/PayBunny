@@ -19,12 +19,12 @@ body {
 .HeroDiv {
     display: flex;
     flex-wrap: wrap;
-    height: 610px;
+    height: 580px;
 }
 
 .HeroDivLeft {
     width: 50%;
-    margin-top: 130px;
+    margin-top: 90px;
 }
 
 .HeroDivLeft h1 {
@@ -41,8 +41,6 @@ body {
     max-width: 100%;
     max-height: 600px;
     margin-top: 40px;
-    height: auto;
-    margin-left: 40px;
 }
 
 button {
@@ -54,15 +52,17 @@ button {
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    font-weight: 700;
 }
-
+.JoinButtonDiv{
+    
+}
 .header {
     font-size: 32px;
     width: 640px;
     margin: 0 auto;
     font-weight: 800;
     text-align: center;
-    margin-top: 70px;
 }
 
 .cards {
@@ -175,8 +175,7 @@ button {
     .HeroDiv {
         display: flex;
         flex-wrap: wrap;
-        height: 700px;
-        margin-top: 0px;
+        height: auto;
     }
     .HeroDivLeft, .HeroDivRight {
         width: 100%;
@@ -184,34 +183,33 @@ button {
     }
     .HeroDivLeft {
         margin-top: 0px;
-    }
-
-    .header {
-        max-width:80%;
-        font-size: 14px;
-        text-align: center;
-        font-weight: 800;
-        margin-top: 60px;
-    }
-
-    .HeroDivLeft {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center; 
+        text-align: center;
     }
 
     .HeroDivLeft h1 {
         font-size: 24px;
         margin-left: 20px;
         font-weight: 800;
+        margin-top: 0px;
     }
-    
+
     .HeroDivRight img {
         max-width: 100%;
         height: auto;
         margin-top: 10px;
         margin-left: 0px;
+    }
+
+    .HeroDivRight {
+        order: 1;
+    }
+
+    .HeroDivLeft button {
+        order: 2;
+        margin-top: 20px;
     }
 
     .waitlist, .footer {
@@ -236,21 +234,28 @@ button {
         font-size: 32px;
         font-weight: 800;
     }
+    .header{
+        width: 278px;
+        font-size: 14px;
+    }
 
     button {
         width: 100%;
-        height: 40px;
-        font-size: 12px;
+        height: 50px;
+        gap: 16px;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 20px;
     }
-    .header1{
+    .header1 {
         font-size: 14px;
         font-weight: 800;
-        
     }
-    .header2{
+    .header2 {
         font-size: 14px;
         font-weight: 600;
     }
+   
     .cards {
         flex-direction: column;
         align-items: center;
@@ -266,7 +271,6 @@ button {
     .footer {
         margin-top: 20px;
     }
-
     .card1, .card2, .card3 {
         width: 100%;
         height: auto;
@@ -274,9 +278,9 @@ button {
     }
 
     .card1 img, .card2 img, .card3 img {
-        width: 98%; 
-        margin: 0 auto; 
-        display: block; 
+        width: 98%;
+        margin: 0 auto;
+        display: block;
     }
 
     .scroll-animate {
