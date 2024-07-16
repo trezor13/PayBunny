@@ -53,11 +53,12 @@ button {
     cursor: pointer;
     font-weight: 700;
 }
-.JoinButtonDiv{
+
+.JoinButtonDiv {
     position: absolute;
     top: 510px;
-    
 }
+
 .header {
     font-size: 32px;
     width: 640px;
@@ -77,27 +78,30 @@ button {
     width: 32%;
     margin: 10px 0;
 }
-.header1{
-   font-size: 24px;
-   font-weight: 800;
+
+.header1 {
+    font-size: 24px;
+    font-weight: 800;
 }
-.header2{
-   font-size: 16px;
-   font-weight: 600;
+
+.header2 {
+    font-size: 16px;
+    font-weight: 600;
 }
+
 .card1, .card2, .card3 {
     width: 32%;
     margin: 10px 0;
 }
 
-.waitlist {  
+.waitlist {
     margin-top: 30px;
     display: flex;
     align-items: center;
     height: 400px;
     justify-content: space-around;
     background-color: #E2E7FF;
-    border-radius: 30px; 
+    border-radius: 30px;
     width: 94%;
     margin-left: 20px;
     flex-wrap: wrap;
@@ -128,7 +132,7 @@ button {
     height: 400px;
     justify-content: space-between;
     background-color: #15141F;
-    border-radius: 30px; 
+    border-radius: 30px;
     width: 94%;
     margin-left: 20px;
     color: white;
@@ -173,16 +177,57 @@ button {
     transform: translateY(0);
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.slide-in {
+    animation: slideIn 1s forwards;
+}
+
+.zoom-in {
+    animation: zoomIn 1s forwards;
+}
+
+.scroll-animate.fade-in.scrolled {
+    animation: fadeIn 1s forwards;
+}
+
+.scroll-animate.slide-in.scrolled {
+    animation: slideIn 1s forwards;
+}
+
+.scroll-animate.zoom-in.scrolled {
+    animation: zoomIn 1s forwards;
+}
+
 @media (max-width: 768px) {
     .HeroDiv {
         display: flex;
         flex-wrap: wrap;
         height: auto;
     }
+
     .HeroDivLeft, .HeroDivRight {
         width: 100%;
         text-align: center;
     }
+
     .HeroDivLeft {
         margin-top: 0px;
         display: flex;
@@ -190,7 +235,8 @@ button {
         align-items: center;
         text-align: center;
     }
-    .JoinButtonDiv{
+
+    .JoinButtonDiv {
         position: relative;
         top: 0px;
     }
@@ -226,10 +272,12 @@ button {
         text-align: center;
         height: 290px;
     }
-    .waitlist button{
+
+    .waitlist button {
         width: 60%;
     }
-    .waitlist p{
+
+    .waitlist p {
         font-size: 14px;
         width: auto;
     }
@@ -246,7 +294,8 @@ button {
         font-size: 32px;
         font-weight: 800;
     }
-    .header{
+
+    .header {
         width: 278px;
         font-size: 14px;
         margin-top: 0px;
@@ -260,20 +309,23 @@ button {
         font-weight: 700;
         margin-top: 20px;
     }
+
     .header1 {
         font-size: 14px;
         font-weight: 800;
     }
+
     .header2 {
         font-size: 14px;
         font-weight: 600;
     }
-   
+
     .cards {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .footer p {
         font-size: 10px;
         text-align: center;
@@ -281,9 +333,11 @@ button {
         width: 70%;
         font-weight: 600;
     }
+
     .footer {
         margin-top: 20px;
     }
+
     .card1, .card2, .card3 {
         width: 100%;
         height: auto;

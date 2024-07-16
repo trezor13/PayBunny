@@ -1,13 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Scroll animation
     const scrollElements = document.querySelectorAll(".scroll-animate");
 
     const elementInView = (el, dividend = 1) => {
         const elementTop = el.getBoundingClientRect().top;
-
-        return (
-            elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
-        );
+        return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
     };
 
     const displayScrollElement = (element) => {
@@ -31,4 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         handleScrollAnimation();
     });
+
+    handleScrollAnimation(); // Initialize the animation when the page loads
 });
