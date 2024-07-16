@@ -1,50 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Typing effect
-    const textElement = document.querySelector(".HeroDivLeft h1");
-    const text = textElement.innerText;
-    textElement.innerText = "";
-    let index = 0;
-    const typingSpeed = 100; // typing speed in milliseconds
-
-    function typeText() {
-        if (index < text.length) {
-            textElement.innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeText, typingSpeed);
-        }
-    }
-    typeText();
-
-    // Scroll animation
-    const scrollElements = document.querySelectorAll(".scroll-animate");
-
-    const elementInView = (el, dividend = 1) => {
-        const elementTop = el.getBoundingClientRect().top;
-
-        return (
-            elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
-        );
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('.scroll-animate');
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1
     };
 
-    const displayScrollElement = (element) => {
-        element.classList.add("scrolled");
-    };
-
-    const hideScrollElement = (element) => {
-        element.classList.remove("scrolled");
-    };
-
-    const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-            if (elementInView(el, 1.25)) {
-                displayScrollElement(el);
-            } else {
-                hideScrollElement(el);
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scrolled');
+                observer.unobserve(entry.target);
             }
         });
-    };
+    }, options);
 
-    window.addEventListener("scroll", () => {
-        handleScrollAnimation();
+    elements.forEach(element => {
+        observer.observe(element);
     });
 });

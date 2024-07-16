@@ -37,9 +37,11 @@ body {
 }
 
 .HeroDivRight img {
-    width: 630px;
-    height: 600px;
+    max-width: 100%;
+    max-height: 600px;
     margin-top: 40px;
+    height: auto;
+    margin-left: 40px;
 }
 
 button {
@@ -85,8 +87,9 @@ button {
 
 .waitlist img {
     margin-top: 60px;
-    width: auto;
-    height: 340px;
+    max-width: 100%;
+    max-height: 340px;
+    height: auto;
 }
 
 .waitlistLeft h1 {
@@ -121,13 +124,16 @@ button {
 }
 
 .frame1 img, .frame2 img {
-    width: 320px;
-    height: 360px;
+    max-width: 100%;
+    max-height: 360px;
+    height: auto;
 }
 
 .middleFrame img {
-    height: 50px;
-    width: 150px;
+    max-height: 50px;
+    max-width: 150px;
+    height: auto;
+    width: auto;
 }
 
 .middleFrame {
@@ -150,11 +156,14 @@ button {
         display: flex;
         flex-wrap: wrap;
         height: 700px;
-        margin-top: 0;
+        margin-top: 0px;
     }
     .HeroDivLeft, .HeroDivRight {
         width: 100%;
         text-align: center;
+    }
+    .HeroDivLeft {
+        margin-top: 0px;
     }
 
     .header {
@@ -162,7 +171,6 @@ button {
     }
 
     .HeroDivLeft {
-        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -170,13 +178,15 @@ button {
     }
 
     .HeroDivLeft h1 {
-        font-size: 28px;
+        font-size: 24px;
         margin-left: 20px;
     }
 
     .HeroDivRight img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
+        margin-top: 10px;
+        margin-left: 0px;
     }
 
     .waitlist, .footer {
@@ -217,6 +227,9 @@ button {
         text-align: center;
         margin: 0 auto;
         width: 70%;
+    }
+    .footer {
+        margin-top: 20px;
     }
 
     .card1, .card2, .card3 {
