@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const scrollElements = document.querySelectorAll(".scroll-animate");
+    const heroDivLeft = document.querySelector(".HeroDivLeft");
+    const heroDivRight = document.querySelector(".HeroDivRight");
+    const joinButton = document.querySelector(".JoinButtonDiv button");
 
     const elementInView = (el, dividend = 1) => {
         const elementTop = el.getBoundingClientRect().top;
@@ -24,9 +27,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
+    const initialHeroAnimation = () => {
+        displayScrollElement(heroDivLeft);
+        displayScrollElement(heroDivRight);
+        displayScrollElement(joinButton);
+    };
+
+    // Initialize the hero div animation
+    initialHeroAnimation();
+
     window.addEventListener("scroll", () => {
         handleScrollAnimation();
     });
 
-    handleScrollAnimation(); // Initialize the animation when the page loads
+    handleScrollAnimation(); // Initialize the scroll animations when the page loads
 });
