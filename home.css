@@ -54,6 +54,8 @@ button {
     font-weight: 700;
 }
 .JoinButtonDiv{
+    position: absolute;
+    top: 510px;
     
 }
 .header {
@@ -61,6 +63,7 @@ button {
     width: 640px;
     margin: 0 auto;
     font-weight: 800;
+    margin-top: 90px;
     text-align: center;
 }
 
@@ -187,6 +190,10 @@ button {
         align-items: center;
         text-align: center;
     }
+    .JoinButtonDiv{
+        position: relative;
+        top: 0px;
+    }
 
     .HeroDivLeft h1 {
         font-size: 24px;
@@ -242,6 +249,7 @@ button {
     .header{
         width: 278px;
         font-size: 14px;
+        margin-top: 0px;
     }
 
     button {
