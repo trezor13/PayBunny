@@ -28,7 +28,7 @@ body {
 }
 
 .HeroDivLeft h1 {
-    font-size: 42px;
+    font-size: 48px;
     width: 90%;
 }
 
@@ -56,7 +56,10 @@ button {
 }
 
 .header {
-    font-size: 13px;
+    font-size: 32px;
+    width: 640px;
+    margin: 0 auto;
+    font-weight: 800;
     text-align: center;
     margin-top: 70px;
 }
@@ -67,6 +70,18 @@ button {
     flex-wrap: wrap;
 }
 
+.card1, .card2, .card3 {
+    width: 32%;
+    margin: 10px 0;
+}
+.header1{
+   font-size: 24px;
+   font-weight: 800;
+}
+.header2{
+   font-size: 16px;
+   font-weight: 600;
+}
 .card1, .card2, .card3 {
     width: 32%;
     margin: 10px 0;
@@ -117,10 +132,11 @@ button {
 }
 
 .footer p {
-    font-size: 10px;
+    font-size: 6px;
     text-align: center;
     margin: 0 auto;
     width: 100%;
+    font-weight: 600;
 }
 
 .frame1 img, .frame2 img {
@@ -138,6 +154,7 @@ button {
 
 .middleFrame {
     font-size: 12px;
+    font-weight: 600;
 }
 
 .scroll-animate {
@@ -167,7 +184,10 @@ button {
     }
 
     .header {
-        font-size: 9px;
+        max-width:80%;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 800;
     }
 
     .HeroDivLeft {
@@ -180,8 +200,9 @@ button {
     .HeroDivLeft h1 {
         font-size: 24px;
         margin-left: 20px;
+        font-weight: 800;
     }
-
+    
     .HeroDivRight img {
         max-width: 100%;
         height: auto;
@@ -209,6 +230,7 @@ button {
 
     .waitlistLeft h1 {
         font-size: 32px;
+        font-weight: 800;
     }
 
     button {
@@ -216,7 +238,14 @@ button {
         height: 40px;
         font-size: 12px;
     }
-
+    .header1{
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .header2{
+        font-size: 14px;
+        font-weight: 600;
+    }
     .cards {
         flex-direction: column;
         align-items: center;
