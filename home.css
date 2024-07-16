@@ -29,6 +29,7 @@ body {
 
 .HeroDivLeft h1 {
     font-size: 48px;
+    width: 90%;
 }
 
 .HeroDivRight {
@@ -108,11 +109,14 @@ button {
     margin-left: 20px;
     color: white;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .footer p {
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .frame1 img, .frame2 img {
@@ -194,6 +198,12 @@ button {
     .cards {
         flex-direction: column;
         align-items: center;
+    }
+    .footer p {
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
     }
 
     .card1, .card2, .card3 {
