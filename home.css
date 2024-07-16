@@ -30,6 +30,7 @@ body {
 .HeroDivLeft h1 {
     font-size: 48px;
     width: 90%;
+    font-weight: 800;
 }
 
 .HeroDivRight {
@@ -109,10 +110,12 @@ button {
 
 .waitlistLeft h1 {
     font-size: 48px;
+    font-size: 800;
 }
 
 .waitlistLeft p {
     font-size: 16px;
+    font-size: 600;
 }
 
 .footer {
@@ -188,6 +191,7 @@ button {
         font-size: 14px;
         text-align: center;
         font-weight: 800;
+        margin-top: 60px;
     }
 
     .HeroDivLeft {
@@ -241,6 +245,7 @@ button {
     .header1{
         font-size: 14px;
         font-weight: 800;
+        
     }
     .header2{
         font-size: 14px;
@@ -256,6 +261,7 @@ button {
         text-align: center;
         margin: 0 auto;
         width: 70%;
+        font-weight: 600;
     }
     .footer {
         margin-top: 20px;
